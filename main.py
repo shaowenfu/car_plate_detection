@@ -160,7 +160,7 @@ def main():
                   if f.lower().endswith(('.png', '.jpg', '.jpeg'))]
     
     count = 0
-    for image_file in image_files[:1]:
+    for image_file in image_files:
         print(f"开始处理测试图片{count+1}: {image_file}")
         image_path = os.path.join(Config.TRAIN_DATA_DIR, image_file)
         result_image, detector_results = process_single_image(image_path, detector, debug=True)
