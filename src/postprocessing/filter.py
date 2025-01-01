@@ -15,11 +15,19 @@ class CandidateFilter:
         """
         filtered = []
         for box in candidates:
-            area = cv2.contourArea(box)
+            # 假设 box 是 [x1, y1, x2, y2]
+            x1, y1, x2, y2 = box
+            rect = np.array([
+                [x1, y1],
+                [x1, y2],
+                [x2, y2],
+                [x2, y1]
+            ], dtype=np.float32)  # 确保类型为 float32 或 int32
+            area = cv2.contourArea(rect)
             if self.min_area < area < self.max_area:
                 filtered.append(box)
         return filtered
-        
+
     def filter_by_ratio(self, candidates):
         """
         根据宽高比过滤候选区域

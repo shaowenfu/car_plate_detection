@@ -1,0 +1,16 @@
+YOLO Training Performance Report
+==============================
+
+Final Metrics:
+---------------
+precision: 1.0000
+recall: 0.8922
+mAP50: 0.9552
+mAP50-95: 0.6187
+
+Best Metrics:
+---------------
+Best precision: 1.0000 (Epoch 1)
+Best recall: 0.8922 (Epoch 2)
+Best mAP50: 0.9552 (Epoch 2)
+Best mAP50-95: 0.6564 (Epoch 1)

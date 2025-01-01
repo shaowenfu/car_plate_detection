@@ -1,3 +1,5 @@
+import numpy as np
+
 class Config:
     # 数据相关配置
     DATA_ROOT = "data"
@@ -12,8 +14,8 @@ class Config:
     GAUSSIAN_SIGMA = 1.0
     
     # 颜色检测参数
-    HSV_BLUE_LOWER = (100, 43, 46)
-    HSV_BLUE_UPPER = (124, 255, 255)
+    HSV_BLUE_LOWER = np.array([100, 70, 70], dtype=np.uint8)
+    HSV_BLUE_UPPER = np.array([130, 255, 255], dtype=np.uint8)
     
     # 边缘检测参数
     SOBEL_KERNEL_SIZE = 3

@@ -1,0 +1,5 @@
+train: ./images/train  # 训练集图片目录
+val: ./images/val      # 验证集图片目录
+
+nc: 1  # 类别数量
+names: ['plate']  # 类别名称
