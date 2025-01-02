@@ -1,0 +1,9 @@
+# 数据集配置
+path: ./data  # 数据集根目录
+train: images/train  # 训练集图片目录
+val: images/val      # 验证集图片目录
+test: images/test    # 测试集图片目录
+
+# 类别数量和名称
+nc: 1  # 类别数量
+names: ['plate']  # 类别名称列表 
